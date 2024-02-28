@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registratsiya Formasi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('/images/5.avif');
+      background-size: cover;
+    }
+
+    .container {
+      width: 400px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 50px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="radio"] {
+      width: calc(100% - 20px);
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color:green;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00ff80;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Ro'yxatdan o'tish</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Foydalanuvchi nomi:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Parol:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label>Jins:</label>
+        <label for="male"><input type="radio" id="male" name="gender" value="male" required> Erkak</label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female" required> Ayol</label>
+      </div>
+      <button type="submit">Ro'yxatdan o'tish</button>
+    </form>
+  </div>
+</body>
+</html>
